@@ -1,0 +1,54 @@
+* {
+    user-select: none;
+}
+#neutralinoapp {
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#neutralinoapp h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#neutralinoapp > div {
+    font-size: 16px;
+    font-weight: normal;
+}
+.spinner {
+    border-radius: 50%;
+    border-bottom: 4px solid white;
+    border-top: 4px solid transparent;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    animation-name: rotator;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-play-state: paused; */
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotateZ(0deg);
+            border-bottom: 4px solid rgb(98, 245, 98);
+        border-top: 4px solid transparent;
+        border-left: 4px solid rgb(98, 245, 98);
+        border-right: 4px solid rgb(98, 245, 98);
+    }
+    50% {
+            border-bottom: 4px solid green;
+        border-top: 4px solid transparent;
+        border-left: 4px solid green;
+        border-right: 4px solid green;
+    }
+    100% {
+        transform: rotateZ(360deg);
+            border-bottom: 4px solid rgb(98, 245, 98);
+        border-top: 4px solid transparent;
+        border-left: 4px solid rgb(98, 245, 98);
+        border-right: 4px solid rgb(98, 245, 98);
+    }
+}
